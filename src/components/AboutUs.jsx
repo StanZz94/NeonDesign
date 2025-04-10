@@ -19,8 +19,7 @@ export default function AboutUs() {
             center={position}
             zoom={16}
             scrollWheelZoom={false}
-            style={{ height: '400px', width: '100%' }}
-            className="rounded-xl shadow-lg z-10"
+            className="shadow-lg z-10 h-64 md:h-96 lg:h-[32rem] mb-20"
         >
             <TileLayer
                 url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
