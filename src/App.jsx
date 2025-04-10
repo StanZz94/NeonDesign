@@ -1,6 +1,7 @@
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import HomePage from './components/HomePage';
 import RootLayout from './components/RootLayout';
+import AboutUs from './components/AboutUs';
 
 const router = createBrowserRouter([
   {
@@ -8,8 +9,11 @@ const router = createBrowserRouter([
     //errorElement: <ErrorPage />,
     element: <RootLayout />,
     children: [
-      { index: true, element: <HomePage /> },
-      //{ path: 'events', element: <EventsPage /> },
+      {
+        index: true, element: <HomePage />, children: [
+          { path: 'about-us', element: <AboutUs /> },
+        ]
+      },
     ]
   },
 ]);
