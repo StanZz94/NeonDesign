@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { NavLink } from "react-router-dom";
-import { Menu, X } from "lucide-react"; // uses lucide icons, install with: npm install lucide-react
+import { Menu, X } from "lucide-react";
 
 import logoImg from "../../public/logoNeo.png";
 
@@ -21,13 +21,14 @@ export default function MainNavigation() {
     return (
         <header className="w-full bg-stone-800 text-white">
             <div className="max-w-screen-xl mx-auto flex justify-between items-center p-4">
+
                 {/* Logo */}
                 <div className={`h-16  md:hidden lg:block`}>
                     <img src={logoImg} alt="logo" className="h-full w-auto object-contain" />
                 </div>
 
                 {/* Desktop Nav */}
-                <nav className="hidden md:flex space-x-6">
+                <nav className="hidden md:flex space-x-4 lg:space-x-6 ">
                     {navLinks.map((navlink) => (
                         <NavLink
                             key={navlink.text}
