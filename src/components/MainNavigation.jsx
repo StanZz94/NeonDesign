@@ -15,28 +15,35 @@ const navLinks = [
 
 export default function MainNavigation() {
 
-    return <header className="w-full h-24 px-20 flex flex-row justify-betweens bg-stone-900">
-        <div className="h-22 w-auto mt-1">
+    return <header className="w-full h-auto px-8 flex flex-row justify-between bg-stone-800">
+        <div className="h-24 w-auto my-2">
             <img src={logoImg} alt="logo" className="h-full w-auto object-contain" />
         </div>
-        <nav className="flex flex-row my-auto">
-            <ul className="flex gap-4">
+        <nav className="flex flex-row my-auto ">
+            <ul className="flex gap-5">
                 {navLinks.map((navlink) => (
                     <li key={navlink.text}>
                         <NavLink
                             to={navlink.path}
                             className={({ isActive }) =>
                                 isActive
-                                    ? "text-[#BAE218] underline"
-                                    : "text-[#dec245] hover:text-[#d9b15a] hover:underline"
+                                    ? "text-[#FF0000] underline"
+                                    : " text-[#FF9D04] hover:text-[#FF5806] hover:underline"
                             }
                             end
                         >
-                            <span className="text-xl font-semibold">{navlink.text}</span>
+                            <span className="text-xl font-bold">{navlink.text}</span>
                         </NavLink>
                     </li>
                 ))}
             </ul>
         </nav>
+        <div className="h-24 w-auto my-2">
+            <p className="text-white">Phone: +359 885 506 618</p>
+            <p className="text-white">office@lightreklama.com</p>
+            <div>
+                <button>EN</button>
+            </div>
+        </div>
     </header>
 }
