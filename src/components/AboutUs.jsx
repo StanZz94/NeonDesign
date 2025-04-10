@@ -50,7 +50,7 @@ export default function AboutUs() {
                     Contacts
                 </h1>
 
-                <div className="flex flex-row font-semibold w-full h-auto text-white text-sm md:text-lg lg:text-xl">
+                <div className="flex flex-row font-semibold w-full h-auto text-white text-xs sm:text-sm md:text-lg lg:text-xl">
                     {/* Left Column */}
                     <div className="w-1/2 flex justify-center">
                         <div className="pl-2 md:pl-10 lg:pl-20 py-4 w-full max-w-md text-left">
