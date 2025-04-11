@@ -1,4 +1,5 @@
 import heroLogo from '../../public/heroLogo.png';
+import Carousel from './Carousel';
 
 export default function HomePage() {
 
@@ -11,7 +12,7 @@ export default function HomePage() {
                     <svg viewBox="0 0 500 100" preserveAspectRatio="none" className="w-full h-20">
                         <path
                             d="M0,0 C150,100 350,0 500,100 L500,00 L0,0 Z"
-                            style={{ stroke: 'none', fill: '#1c1917' }} // stone-800
+                            style={{ stroke: 'none', fill: '#1c1917' }}
                         ></path>
                     </svg>
                 </div>
@@ -23,7 +24,7 @@ export default function HomePage() {
             <h2 className="text-center text-red-600 pb-6 font-semibold font-serif text-xl md:text-3xl lg:text-4xl">
                 We Create Your Vision !
             </h2>
-            <p></p>
+            <Carousel />
         </div>
     </div>
 }

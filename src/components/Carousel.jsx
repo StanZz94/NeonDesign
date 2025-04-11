@@ -24,7 +24,7 @@ export default function Carousel() {
   }, []);
 
   return (
-    <div className="relative w-full h-[300px] md:h-[500px] overflow-hidden">
+    <div className="relative mx-auto w-[90%] h-[300px] md:h-[500px] overflow-hidden">
       {/* Slide Image */}
       <img
         src={images[currentIndex]}
@@ -39,7 +39,7 @@ export default function Carousel() {
             key={idx}
             onClick={() => goToSlide(idx)}
             className={`w-3 h-3 rounded-full ${
-              currentIndex === idx ? 'bg-white' : 'bg-gray-400'
+              currentIndex === idx ? 'bg-red-600' : 'bg-black'
             }`}
           />
         ))}
